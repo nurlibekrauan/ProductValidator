@@ -12,5 +12,13 @@ This project contains a Python class for validating product attributes like name
 ## Usage:
 
 ```python
-product = Product(name="Laptop", price=99, quantity=10, obj_name="Product1")
-print(product.total_sum())
+product = Product(name="Laptop", price=999, quantity=10, obj_name="Product1")
+
+# Вывод атрибутов объекта
+print(product.name)  # "Laptop"
+print(product.price)  # 999
+print(product.quantity)  # 10
+
+# Изменение атрибута
+product.price = 1200  # Это изменение будет залогировано
+print(product.total_sum())  # 12000
